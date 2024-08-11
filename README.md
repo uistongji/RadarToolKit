@@ -115,9 +115,9 @@ The RadarToolKit software is divided into three main sections: Antarctic Map, Ra
    - **Incoherent Stacking:** adds incoherently to sum a certain number of A-scopes to cancle the incoherent noise without consideration of phase.
 
    - **Unfocused-SAR:** Coherent Stacking -> Pulse Compression -> Incoherent Stacking.
-   
-  **Example interface image:**  ![Antarctic Map Viewer Interface](docs/images/antarctic-map-viewer.png)
 
+ **Example interface image:**  ![RadarData Processing](docs/images/radardata-processing.png)
+  
 - **Radar Database:** Provides a fast query and management tool for RES Transects information.
 
   **Detailed Description:**
@@ -129,9 +129,7 @@ The RadarToolKit software is divided into three main sections: Antarctic Map, Ra
     - **Affiliation Homepage** retrieves the "Affiliation URL" for the selected record from the database and opens the corresponding URL in a browser.
 
     - **New Table** creates a new blank table in the database, allowing users to perform a series of database management operations on the right side.
-
-  **Example interface image:**  ![RadarData Processing](docs/images/radardata-processing.png)
-
+ 
   - The **DataBase Management** tab on the right side allows for various database management operations:
     - **Add Record** adds a new blank record.
     - **Delete Record** deletes the selected record.
@@ -141,7 +139,7 @@ The RadarToolKit software is divided into three main sections: Antarctic Map, Ra
     - **Export As Excel** exports the current table information to an Excel file.
     - Clicking **Show** at the bottom expands hidden data field information, showing the number of fields in the database, data types (INTEGER or TEXT), non-null constraints, primary key status, etc.
 
-    **Example interface image:**  ![DataBase Management Interface](docs/images/database-management.png)
+**Example interface image:**  ![DataBase Management Interface](docs/images/database-management.png)
   
 ## Contributing
 
@@ -180,3 +178,10 @@ If you have any questions, suggestions, or feedback, please feel free to reach o
 
 - **Email:** uistongji@gmail.com
 - **GitHub Issues:** [RadarToolKit Issues](https://github.com/uistongji/RadarToolKit/issues)
+
+## Contributors
+
+- [Chen Lv](https://github.com/Carolina-Lyu) - Contributor
+- [Jiaying Zhou](https://github.com/0901230) - Contributor
+- [Tong Hao](https://github.com/uistongji) - Supervisor
+
