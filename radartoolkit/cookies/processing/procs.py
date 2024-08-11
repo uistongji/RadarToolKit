@@ -16,6 +16,7 @@
 # together with the RadarToolKit (ISR): https://github.com/uistongji/RadarToolKit
 # 
 # AUTHOR: Chen Lv (supervisor: Tong Hao), Tongji University
+# We would like to acknowledge the contributions from the PRIC and the UTIG.
 
 
 """ HiCARS2 Legacy Radar Data Breakout.
@@ -31,9 +32,8 @@ logger = logging.getLogger(__name__)
 
 class PIK1Plugins(Plugin):
 
-    DEFAULT_API = "iceradlib.api_pric.quality.xlob.RAD.src.procs"
-    DEFAULT_ABSPYPATH = "/Volumes/CAROLINA/RTK_UPDATING_CAROLINA/iceRadLib"
-
+    DEFAULT_API = ""
+    DEFAULT_ABSPYPATH = ""
 
     def __init__(self, moduleName=None, absPythonPath=None, **kwargs) -> None:
         """
