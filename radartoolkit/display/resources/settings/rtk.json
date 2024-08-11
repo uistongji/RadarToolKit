@@ -1,0 +1,635 @@
+{
+    "_program": "RadarToolKit",
+    "_version": "1.0.0",
+    "cmFavorites": [
+        "SciColMaps/Oleron",
+        "SciColMaps/Nuuk",
+        "SciColMaps/Acton",
+        "CET/CET-CBL2",
+        "CET/CET-C2",
+        "CET/CET-R2",
+        "MatPlotLib/BrBG",
+        "MatPlotLib/Tab20",
+        "MatPlotLib/Tab10",
+        "MatPlotLib/Cubehelix",
+        "MatPlotLib/Viridis",
+        "MatPlotLib/Magma",
+        "MatPlotLib/Coolwarm",
+        "MatPlotLib/Gray"
+    ],
+    "plugins": {
+        "file-formats": [
+            {
+                "absClassName": "display.rti.rtis.HicarsRawFileRti",
+                "globs": ".",
+                "iconColor": "#FFC450",
+                "name": "Hicars2 Raw File [bxds.bin]",
+                "pythonPath": ""
+            },
+            {
+                "absClassName": "display.rti.rtis.HicarsPIK1FileRti",
+                "globs": ".",
+                "iconColor": "#5ECD8B",
+                "name": "Hicars2 PIK1 File [MagLoResInco*]",
+                "pythonPath": ""
+            },
+            {
+                "absClassName": "display.rti.rtis.MatlabFileRti",
+                "globs": "*.mat",
+                "iconColor": "#D55276",
+                "name": "Matlab Binary File [*.mat]",
+                "pythonPath": ""
+            },
+            {
+                "absClassName": "display.rti.rtis.NumpyBinaryFileRti",
+                "globs": "*.npy",
+                "iconColor": "#F1A7B5",
+                "name": "Numpy Binary File [*.npy]",
+                "pythonPath": ""
+            },
+            {
+                "absClassName": "display.rti.rtis.NcFileRti",
+                "globs": "*.nc",
+                "iconColor": "#B4D4F8",
+                "name": "Nc File [*.nc]",
+                "pythonPath": ""
+            }
+        ],
+        "evaluators": [
+            {
+                "absClassName": "display.evaluator.pgs.imageplot2d.PgImagePlot2d",
+                "name": "Image Plot",
+                "pythonPath": "",
+                "shortCut": "Ctrl+1"
+            },
+            {
+                "absClassName": "display.evaluator.pgs.pgplot2d.PgPlots2DCanvas",
+                "name": "Multiple Image Plots",
+                "pythonPath": "",
+                "shortCut": "Ctrl+2"
+            },
+            {
+                "absClassName": "display.evaluator.pgs.table.TableInspector",
+                "name": "Table",
+                "pythonPath": "",
+                "shortCut": "Ctrl+3"
+            }
+        ]
+    },
+    "recentFiles": [
+        [
+            "2023-11-01 20:19:18",
+            "/Users/carolina/Desktop/TestData/R38a.mat",
+            "MatlabBinFile[*.mat]"
+        ]
+    ],
+    "windows": {
+        "win-0": {
+            "configWidget": {
+                "autoRange": false,
+                "resetMode": "ranges"
+            },
+            "curInspector": "imageplot",
+            "inspectors": {
+                "imageplot": {
+                    "auto down sample": false,
+                    "color scale": {
+                        "color map": {
+                            "_data": "CET/CET-L8",
+                            "_sub": {
+                                "reversed": false,
+                                "subsample": 1
+                            }
+                        },
+                        "label": [
+                            1,
+                            [
+                                "-- none --",
+                                "{name} {unit}",
+                                "{path} {unit}",
+                                "{name}",
+                                "{path}",
+                                "{raw-unit}"
+                            ]
+                        ],
+                        "range": {
+                            "auto-range": {
+                                "_data": true,
+                                "_sub": {
+                                    "method": 7,
+                                    "padding": 67,
+                                    "subsample": true
+                                }
+                            },
+                            "max": 100.000,
+                            "min": -100.100
+                        },
+                        "show drag lines": {
+                            "_data": false,
+                            "_sub": {
+                                "margins": 40
+                            }
+                        },
+                        "show histogram": true
+                    },
+                    "cross-hair": {
+                        "horizontal": {
+                            "_data": false,
+                            "_sub": {
+                                "data range": {
+                                    "auto-range": {
+                                        "_data": false,
+                                        "_sub": {
+                                            "method": 0,
+                                            "padding": -1,
+                                            "subsample": true
+                                        }
+                                    },
+                                    "max": 1.0,
+                                    "min": 0.0
+                                },
+                                "grid": {
+                                    "_data": true,
+                                    "_sub": {
+                                        "alpha": 0.2,
+                                        "x-axis": true,
+                                        "y-axis": true
+                                    }
+                                }
+                            }
+                        },
+                        "pen": {
+                            "anti-alias": true,
+                            "color": "#ff0066",
+                            "line": {
+                                "_data": true,
+                                "_sub": {
+                                    "shadow": {
+                                        "_data": false,
+                                        "_sub": {
+                                            "color": "#bfbfbf",
+                                            "style": 1,
+                                            "width": 0.0
+                                        }
+                                    },
+                                    "style": 0,
+                                    "width": 1.0
+                                }
+                            },
+                            "symbol": {
+                                "_data": false,
+                                "_sub": {
+                                    "shape": 0,
+                                    "size": 5
+                                }
+                            }
+                        },
+                        "vertical": {
+                            "_data": true,
+                            "_sub": {
+                                "data range": {
+                                    "auto-range": {
+                                        "_data": true,
+                                        "_sub": {
+                                            "method": 0,
+                                            "padding": -1,
+                                            "subsample": true
+                                        }
+                                    },
+                                    "max": 1.0,
+                                    "min": 0.0
+                                },
+                                "grid": {
+                                    "_data": true,
+                                    "_sub": {
+                                        "alpha": 0.2,
+                                        "x-axis": true,
+                                        "y-axis": true
+                                    }
+                                }
+                            }
+                        }
+                    },
+                    "lock aspect ratio": {
+                        "_data": false,
+                        "_sub": {
+                            "ratio": 1.0
+                        }
+                    },
+                    "rectangle zoom mode": false,
+                    "show probe": true,
+                    "title": [
+                        0,
+                        [
+                            "{base-name} -- {name} {slices}",
+                            "{name} {slices}",
+                            "{path} {slices}"
+                        ]
+                    ],
+                    "x-axis": {
+                        "flipped": false,
+                        "label": [
+                            0,
+                            [   "Bscan = [{minX}: {maxX}]",
+                                "{x-dim} [index]",
+                                "-- none --"
+                            ]
+                        ],
+                        "range": {
+                            "auto-range": {
+                                "_data": true,
+                                "_sub": {
+                                    "padding": -1
+                                }
+                            },
+                            "max": 15453.151216296887,
+                            "min": 7371.753534638347
+                        }
+                    },
+                    "y-axis": {
+                        "flipped": true,
+                        "label": [
+                            0,
+                            [
+                                "Ascan-[sampling]",
+                                "{y-dim} [index]",
+                                "-- none --"
+                            ]
+                        ],
+                        "range": {
+                            "auto-range": {
+                                "_data": true,
+                                "_sub": {
+                                    "padding": -1
+                                }
+                            },
+                            "max": 2452.991813136017,
+                            "min": -1998.6481991314872
+                        }
+                    }
+                },
+                "lineplot": {
+                    "grid": {
+                        "_data": true,
+                        "_sub": {
+                            "alpha": 0.2,
+                            "x-axis": true,
+                            "y-axis": true
+                        }
+                    },
+                    "pen": {
+                        "anti-alias": true,
+                        "color": "#ff0066",
+                        "line": {
+                            "_data": true,
+                            "_sub": {
+                                "shadow": {
+                                    "_data": false,
+                                    "_sub": {
+                                        "color": "#bfbfbf",
+                                        "style": 1,
+                                        "width": 0.0
+                                    }
+                                },
+                                "style": 0,
+                                "width": 1.0
+                            }
+                        },
+                        "symbol": {
+                            "_data": false,
+                            "_sub": {
+                                "shape": 0,
+                                "size": 5
+                            }
+                        }
+                    },
+                    "rectangle zoom mode": false,
+                    "show probe": false,
+                    "title": [
+                        0,
+                        [
+                            "{base-name} -- {name} {slices}",
+                            "{name} {slices}",
+                            "{path} {slices}"
+                        ]
+                    ],
+                    "x-axis": {
+                        "label": [
+                            1,
+                            [
+                                "-- none --",
+                                "{x-dim} [index]"
+                            ]
+                        ],
+                        "range": {
+                            "auto-range": {
+                                "_data": true,
+                                "_sub": {
+                                    "padding": -1
+                                }
+                            },
+                            "max": 1043680.3449408453,
+                            "min": -43681.34494084534
+                        }
+                    },
+                    "y-axis": {
+                        "label": [
+                            1,
+                            [
+                                "-- none --",
+                                "{name} {unit}",
+                                "{path} {unit}",
+                                "{name}",
+                                "{path}",
+                                "{raw-unit}"
+                            ]
+                        ],
+                        "logarithmic": false,
+                        "range": {
+                            "auto-range": {
+                                "_data": true,
+                                "_sub": {
+                                    "method": 0,
+                                    "padding": -1,
+                                    "subsample": true
+                                }
+                            },
+                            "max": 4.277724168674254,
+                            "min": -4.855290973893037
+                        }
+                    }
+                },
+                "table": {
+                    "auto column widths": {
+                        "_data": false,
+                        "_sub": {
+                            "column width": 100
+                        }
+                    },
+                    "auto row heights": {
+                        "_data": false,
+                        "_sub": {
+                            "row height": 30
+                        }
+                    },
+                    "encoding": [
+                        0,
+                        [
+                            "utf-8",
+                            "ascii",
+                            "latin-1",
+                            "windows-1252"
+                        ]
+                    ],
+                    "font": {
+                        "_data": "Academy Engraved LET,13,-1,5,50,0,0,0,0,0",
+                        "_sub": {
+                            "family": 0,
+                            "italic": false,
+                            "size": 13,
+                            "weight": 1
+                        }
+                    },
+                    "format specifiers": {
+                        "integers": [
+                            0,
+                            [
+                                "",
+                                "d",
+                                "n",
+                                "c",
+                                "#b",
+                                "#o",
+                                "#x",
+                                "!r",
+                                "8d",
+                                "#8.4g",
+                                "_<10",
+                                "_>10",
+                                "'int: {}'"
+                            ]
+                        ],
+                        "missing data": [
+                            2,
+                            [
+                                "",
+                                "' '",
+                                "'--'",
+                                "'<masked>'",
+                                "!r"
+                            ]
+                        ],
+                        "other numbers": [
+                            7,
+                            [
+                                "",
+                                "f",
+                                "g",
+                                "n",
+                                "%",
+                                "!r",
+                                "8.3e",
+                                "#8.4g",
+                                "_<15",
+                                "_>15",
+                                "'num: {}'"
+                            ]
+                        ],
+                        "other types": [
+                            0,
+                            [
+                                "",
+                                "!s",
+                                "!r",
+                                "'other: {}'"
+                            ]
+                        ],
+                        "strings": [
+                            0,
+                            [
+                                "",
+                                "s",
+                                "!r",
+                                "!a",
+                                "10.10s",
+                                "_<15s",
+                                "_>15s",
+                                "'str: {}'"
+                            ]
+                        ]
+                    },
+                    "horizontal alignment": 0,
+                    "missing data color": "#b0b0b0",
+                    "scroll": 0,
+                    "separate fields": true,
+                    "text color": "#000000",
+                    "vertical alignment": 1,
+                    "word wrap": false
+                },
+                "text": {
+                    "encoding": [
+                        0,
+                        [
+                            "utf-8",
+                            "ascii",
+                            "latin-1",
+                            "windows-1252"
+                        ]
+                    ],
+                    "font": {
+                        "_data": "Courier,13,-1,5,50,0,0,0,0,0",
+                        "_sub": {
+                            "family": 0,
+                            "italic": false,
+                            "size": 13,
+                            "weight": 1
+                        }
+                    },
+                    "word wrap": 0
+                }
+            },
+            "layout": {
+                "collectorHeaders": "AAAA/wAAAAAAAAABAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAsoAAAADAAAAAAAAAAAAAAAAAAAAAGT/////AAAAgQAAAAAAAAADAAACWAAAAAEAAAAAAAAAOQAAAAEAAAAAAAAAOQAAAAEAAAAAAAAD6AAAAABk",
+                "configTreeHeaders": "AAAA/wAAAAAAAAABAAAAAQAAAAAAAAAAAAAAAAAAAAAGOgAAAAQAAAAFAAAAZAAAAAQAAABkAAAAAQAAAGQAAAADAAAAZAAAAUUAAAAGAQAAAQAAAAAAAAAAAAAAAGT/////AAAAgQAAAAAAAAAGAAAAoAAAAAEAAAAAAAAAAAAAAAEAAAAAAAAApQAAAAEAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAEAAAAAAAAD6AAAAACg",
+                "repoWidget": {
+                    "attributesPane": {
+                        "tableHeaders": "AAAA/wAAAAAAAAABAAAAAQAAAAMAAAAAAAAAAAAAAAADBAAAAAEAAAACAAAAbgAAAn4AAAADAAEBAQAAAAAAAAAAAAAAAGT/////AAAAhAAAAAAAAAADAAAAfQAAAAEAAAAAAAACAQAAAAEAAAAAAAAAAAAAAAEAAAAAAAAD6AAAAACW"
+                    },
+                    "propertiesPane": {
+                        "tableHeaders": "AAAA/wAAAAAAAAABAAAAAQAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAYQAAAACAAEBAQAAAAAAAAAAAAAAAGT/////AAAAhAAAAAAAAAACAAAAfQAAAAEAAAAAAAABBwAAAAEAAAAAAAAD6AAAAACW"
+                    },
+                    "splitterSizes": [
+                        437,
+                        239
+                    ],
+                    "tabIndex": 0,
+                    "treeHeaders": "AAAA/wAAAAAAAAABAAAAAQAAAAAAAAAAAAAAAAAAAAAPznsAAAALAAAADgAAAGQAAAAJAAAAZAAAAAgAAABkAAAACwAAAGQAAAAHAAAAZAAAAAYAAABkAAAAAQAAAGQAAAADAAAAZAAAAAIAAABkAAAADQAAAGQAAAAMAAAAZAAAAaQAAAAPAQAAAQAAAAAAAAAAAAAAAGT/////AAAAgQAAAAAAAAAPAAAAtAAAAAEAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAEAAAAAAAAAMgAAAAEAAAAAAAAAUAAAAAEAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAEAAAAAAAAAbgAAAAEAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAEAAAAAAAAD6AAAAABu"
+                },
+                "winGeom": "AdnQywADAAAAAAAMAAAAawAABUwAAANLAAAADAAAAIcAAAVMAAADSwAAAAAAAAAABaAAAAAMAAAAhwAABUwAAANL",
+                "winState": "AAAA/wAAAAD9AAAAAwAAAAAAAAGeAAACxfwCAAAAAfsAAAAUAGQAbwBjAGsAMgBfAGQAYQB0AGEBAAAAAAAAAsUAAADXAP///wAAAAEAAAFfAAAB2/wCAAAAAfsAAAAcAGQAbwBjAGsAMgBfAHMAZQB0AHQAaQBuAGcAcwEAAAAAAAAB2wAAAH8A////AAAAAwAAA6IAAADp/AEAAAAB+wAAAB4AZABvAGMAawAyAF8AYwBvAGwAbABlAGMAdABvAHIBAAABnwAAA6IAAABQAP///wAAAkIAAAHbAAAAAQAAAAQAAAABAAAACPwAAAAA"
+            },
+            "menuBar":{
+                "File": [
+                    {
+                        "actionName": "Open File As ...",
+                        "toolTip": "open file as the selected type.",
+                        "shortCut": "",
+                        "handler": "_repopulateOpenAsMenu",
+                        "expanded": true,
+                        "decoration":"",
+                        "addSeparator": false
+                    },
+                    {
+                        "actionName": "Open Recent",
+                        "toolTip": "open recently loaded file",
+                        "shortCut": "",
+                        "handler": "_repopulateOpenRecentMenu",
+                        "expanded": true,
+                        "decoration":"",
+                        "addSeparator": true
+                    },
+                    {
+                        "actionName": "Save File",
+                        "toolTip": "save file of numpy binary as *.npy",
+                        "shortCut": "Ctrl+S",
+                        "handler": "saveFile",
+                        "expanded": false,
+                        "decoration":"",
+                        "addSeparator": false
+                    },
+                    {
+                        "actionName": "Print",
+                        "toolTip": "print the current view as a pdf.",
+                        "shortCut": "Ctrl+P",
+                        "handler": "printView",
+                        "expanded": false,
+                        "decoration":"",
+                        "addSeparator": false
+                    },
+                    {
+                        "actionName": "Exit",
+                        "toolTip": "save current settings and exit.",
+                        "shortCut": "Ctrl+Q",
+                        "handler": "_quit",
+                        "expanded": false,
+                        "decoration":"",
+                        "addSeparator": false
+                    }
+                ],
+                "View":[
+                ],
+                "Processing": [
+                    {
+                        "actionName": "Configure Parameters",
+                        "toolTip": "Re-configure the processing parameters globally. Once set, all related-parameters will be reset and cannot undo.",
+                        "shortCut": "",
+                        "handler": "activateProcParams",
+                        "expanded": false,
+                        "decoration": "",
+                        "addSeparator": false
+                    }
+                ],
+                "Analysis": [
+                ],
+                "Settings": [
+                    {
+                        "actionName": "ICE setting",
+                        "toolTip": "sets ICE path to load map data.",
+                        "shortCut": "Ctrl+T",
+                        "handler": "activeiceDialog",
+                        "expanded": false,
+                        "decoration":"",
+                        "addSeparator": true
+                    }
+                ],
+                "Help": [
+                    {
+                        "actionName": "",
+                        "toolTip": "search information",
+                        "shortCut": "",
+                        "handler": "activateSearchDialog",
+                        "expanded": false,
+                        "decoration": "",
+                        "addSeparator": false
+                    },
+                    {
+                        "actionName": "Visit ...",
+                        "toolTip": "visit other resources",
+                        "shortCut": "",
+                        "handler": "activateVisitDialog",
+                        "expanded": true,
+                        "decoration": "",
+                        "addSeparator": false
+                    },
+                    {
+                        "actionName": "Keyboard Shortcuts",
+                        "toolTip": "",
+                        "shortCut": "",
+                        "handler": "activateShortCutsDialog",
+                        "expanded": false,
+                        "decoration": "",
+                        "addSeparator": true
+                    },
+                    {
+                        "actionName": "RadarToolKit(RTK)-ISR Service and Support",
+                        "toolTip": "",
+                        "shortCut": "",
+                        "handler": "activateRTKDialog",
+                        "expanded": false,
+                        "decoration": "",
+                        "addSeparator": false
+                    }
+                ]
+            },
+            "toolBar":{
+                
+            },
+            "Urls":{
+                "BAS": "https://bas.maps.arcgis.com/apps/instant/media/index.html?appid=c1a658ec78d54be18da570e955c278ca#",
+                "LDEO": "https://pgg.ldeo.columbia.edu/",
+                "CReSIS": "",
+                "NSIDC": ""
+            }
+        }
+    }
+}
