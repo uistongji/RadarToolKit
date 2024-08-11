@@ -19,7 +19,7 @@
 # We would like to acknowledge the contributions from the PRIC and the UTIG.
 
 
-""" HiCARS2 Legacy Radar Data Breakout.
+""" HiCARS2 Legacy Radar Data Processing Flow.
 """
 
 import logging
