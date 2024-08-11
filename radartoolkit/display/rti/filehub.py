@@ -14,8 +14,8 @@
 #
 # You should have received a copy of the GNU General Public License
 # together with the RadarToolKit (ISR): https://github.com/uistongji/RadarToolKit
-#
-# AUTHOR: Chen Lv
+# 
+# AUTHOR: Chen Lv (supervisor: Tong Hao), Tongji University
 
 
 """ 

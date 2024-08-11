@@ -1,4 +1,21 @@
-#!/usr/bin.env python
+#!/usr/bin/env python
+# -*- coding: utf-8 -*-
+# 
+# This code is part of package RadarToolKit (RTK).
+# 
+# RadarToolKit (RTK) manages the track, view, processing, analysis and simulation of radargrams, 
+# e.g., impulse and chirp. The distributed version focuses on the chirped system utilized in Antarctica,
+# namely the ice sounding radar (ISR). Therefore RTK currently is also called as RadarToolKit (ISR).
+#
+# RTK is distributed in the hope that it would be helpful for
+# the users that needs to generate paper-like image results,
+# but WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+#
+# You should have received a copy of the GNU General Public License
+# together with the RadarToolKit (ISR): https://github.com/uistongji/RadarToolKit
+# 
+# AUTHOR: Chen Lv (supervisor: Tong Hao), Tongji University
 
 
 from ..bindings import QtWidgets, QtSignal
@@ -186,29 +203,6 @@ class AbstractInspector(QtWidgets.QStackedWidget):
         self.config.model.setRefreshBlocked(wasBlocked)
         self.config.refreshFromTarget()
         logger.debug(f"{self.__repr__()}:_drawContents> refreshFromTarget finished successfully.")
-
-        # try:
-        #     self.setCurrentIndex(self.CONTENTS_PAGE_IDX)
-        #     wasBlocked = self.config.model.setRefreshBlocked(True)
-
-        #     try:
-        #         self._drawContents(reason=reason, initiator=initiator)
-        #         logger.debug(f"{self.__repr__()}:_drawContents> finished the contents successfully.")
-        #     finally:
-        #         self.config.model.setRefreshBlocked(wasBlocked)
-        #         self.config.refreshFromTarget()
-        #         logger.debug(f"{self.__repr__()}:_drawContents> refreshFromTarget finished successfully.")
-
-        # except InvalidDataError as ex:
-        #     logger.debug(f"{self.__repr__()}:_drawContents> uanble to draw the contents: {ex}")
-        #     if str(ex):
-        #         self.sigShowMessage.emit(str(ex))
-        
-        # except Exception as ex:  ####
-        #     logger.debug(f"{self.__repr__()}:_drawContents> error raised while drawing the contents: {ex}")
-        #     self._clearContents()
-        #     self.setCurrentIndex(self.ERROR_PAGE_IDX)
-        #     self._showError(msg=str(ex))
 
 
     def _resetRequired(self, reason, _initiator=None):
