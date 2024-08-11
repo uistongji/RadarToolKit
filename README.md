@@ -182,6 +182,6 @@ If you have any questions, suggestions, or feedback, please feel free to reach o
 ## Contributors
 
 - [Chen Lv](https://github.com/Carolina-Lyu) - Contributor
-- [Jiaying Zhou](https://github.com/0901230) - Contributor
+- [Jiaying Zhou](https://github.com/Zhou-Jiaying) - Contributor
 - [Tong Hao](https://github.com/uistongji) - Supervisor
 
