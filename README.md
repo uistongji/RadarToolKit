@@ -178,5 +178,5 @@ We extend our gratitude to the following open-source projects and tools that mad
 
 If you have any questions, suggestions, or feedback, please feel free to reach out to us:
 
-- **Email:** example@example.com
+- **Email:** uistongji@gmail.com
 - **GitHub Issues:** [RadarToolKit Issues](https://github.com/uistongji/RadarToolKit/issues)
