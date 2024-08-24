@@ -17,6 +17,8 @@
 # 
 # AUTHOR: Chen Lv (supervisor: Tong Hao), Tongji University
 # We would like to acknowledge the contributions from the PRIC and the UTIG.
+# The processing flow (pik1) originates from the codes by UTIG with modifications.
+# Any questions, please feel free to contact us and we are more than happy to help you with it :)
 
 
 """ HiCARS2 Legacy Radar Data Processing Flow.
